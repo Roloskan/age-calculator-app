@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="/assets/style/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="main-container" data-aos="fade-up">
+    <main class="main-calculator">
+      <div class="inputs-container">
+        <div class="day-input" data-aos="fade-right">
+          <label for="day" id="day-l">Day</label>
+          <input type="number" min="1" max="31" name="day" id="day" placeholder="DD" required>
+          <p id="day-p">This field is required</p>
+        </div>
+        <div class="month-input" data-aos="fade-down">
+          <label for="month" id="month-l">Month</label>
+          <input type="number" min="1" max="12" name="month" id="month" placeholder="MM" required>
+          <p id="month-p">This field is required</p>
+        </div>
+        <div class="year-input" data-aos="fade-left">
+          <label for="year" id="year-l">Year</label>
+          <input type="number" min="1000" max="10000"  name="year" id="year" placeholder="YYYY" required>
+          <p id="year-p">This field is required</p>
+        </div>
+      </div>
+      <div class="mid-container" data-aos="fade-up-right">
+        <hr>
+        <button class="calculate" id="btn-calculate" onclick="calculate()">
+        </button>
+      </div>
+      <div class="result-container">
+        <h2 id="year-text" data-aos="fade-down-right">-- <span>years</span></h2>
+        <h2 id="month-text" data-aos="fade-down-left">-- <span>months</span></h2>
+        <h2 id="day-text" data-aos="fade-up-left">-- <span>days</span></h2>
+      </div>
+    </main>
+  </section>
+  <script src="/assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
